@@ -25,5 +25,7 @@ for i in coins:
 
 if counter_of_tails <= counter_of_eagles:
     print(f"Необходимо перевернуть {counter_of_tails} монет(-ы)") 
+elif counter_of_tails == 0 or counter_of_eagles == 0:
+    print("Монеты не нужно переворачивать")
 else:
     print(f"Необходимо перевернуть {counter_of_eagles} монет(-ы)")

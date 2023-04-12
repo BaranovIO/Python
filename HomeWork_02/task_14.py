@@ -5,10 +5,10 @@
 n = int(input("Введите натуральное число: "))
 
 numbers = []
-i = 0
-while 2 ** i <= n:
-    power_of_two = 2 ** i
+k = 0
+while 2 ** k <= n:                  #пока 2 в степени k меньше введёного числа производим заполнение списка
+    power_of_two = 2 ** k
     numbers.append(power_of_two)
-    i += 1
+    k += 1
 
 print(numbers)

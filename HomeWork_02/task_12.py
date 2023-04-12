@@ -5,3 +5,18 @@
 # произведение P. Помогите Кате отгадать задуманные Петей числа.
 # 4 4 -> 2 2
 # 5 6 -> 2 3
+
+print("Задумайте два натуральных числа и запоните их.")
+sum_of_numbers = int(input("Введите их сумму: "))
+multiplication_of_numbers = int(input("и произведение: "))
+
+print(sum_of_numbers, multiplication_of_numbers)
+
+# Решаем систему уравнений, где x + y = S и x * y = P. В итоге получаем квадратное уравнение x^2 - S*x + P = 0
+
+# корни этого уравнения x = (S +- sqrt(S^2 - 4*P)) / 2
+
+x = int(sum_of_numbers + (sum_of_numbers ** 2 - 4 * multiplication_of_numbers) ** 0.5) / 2
+y = int(sum_of_numbers - (sum_of_numbers ** 2 - 4 * multiplication_of_numbers) ** 0.5) / 2
+
+print(f"Загаданные числа {x} и {y}")
