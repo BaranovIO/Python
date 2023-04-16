@@ -26,4 +26,7 @@ for i in range(n):
     if array_of_numbers[i] == x:
         counter += 1
 
-print(f"Число {x} встречается {counter} раз")
+if counter > 0:
+    print(f"Число {x} встречается {counter} раз")
+else:
+    print("Указанного числа нет в массиве")
