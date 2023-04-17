@@ -11,7 +11,6 @@
 import random
 
 n = int(input("Введите количество чисел в массиве: "))
-count = 0
 array_of_numbers = []
 
 for i in range (n):
