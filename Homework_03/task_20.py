@@ -38,11 +38,11 @@ rus = {1:'АВЕИНОРСТ',
       	5:'ЖЗХЦЧ',
       	8:'ШЭЮ',
       	10:'ФЩЪ'}
-N = int(input('На каком языке хотите ввести слово? 1 - русский, 2 - английский? '))
+user_choice = int(input('На каком языке хотите ввести слово? 1 - русский, 2 - английский? '))
 user_word = input('Введите слово: ').upper()
-if N == 1:
+if user_choice == 1:
 	result_rus = sum([key for i in user_word for key, value in rus.items() if i in value])
 	print(f"За это слово вы получаете {result_rus} 'очков")
-if N == 2:
+if user_choice == 2:
 	result_eng = sum([key for i in user_word for key, value in eng.items() if i in value])
 	print(f"За это слово вы получаете {result_eng} 'очков")
