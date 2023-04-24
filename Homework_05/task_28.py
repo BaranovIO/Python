@@ -8,6 +8,8 @@
 def summa(a, b):
     if b == 0:
         return a
+    if a == 0:
+        return b
     if a < b:
         a, b = b, a
     return summa(a + 1, b - 1)
