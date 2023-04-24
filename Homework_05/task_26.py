@@ -8,8 +8,7 @@
 def exponentiation(user_number, power):
     if power == 0:
         return 1
-    else:
-        return (user_number * exponentiation(user_number, power - 1))
+    return (user_number * exponentiation(user_number, power - 1))
     
 user_number = int(input("Введите число: "))
 power = int(input("Введите степень, в которую хотите возвести число: "))
