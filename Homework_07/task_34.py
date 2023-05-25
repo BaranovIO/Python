@@ -12,13 +12,13 @@
 # Парам пам-пам
 
 def winnie_the_pooh(poem):
-    volwes = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
+    vowels = ['а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я']
     phrase = poem.split()
     result = list()
     for item in phrase:
         k = 0
         for letter in item:
-            if letter in volwes:
+            if letter in vowels:
                 k += 1
         result.append(k)
     if len(set(result)) == 1:
